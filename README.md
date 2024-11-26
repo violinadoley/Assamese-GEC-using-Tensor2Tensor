@@ -69,7 +69,7 @@ Contains files for evaluating the model.
 Contains final predictions and evaluation results.
 
 - **`predictions.txt`**: Contains model predictions on the test dataset.
-- **`metrics.json`**: Contains evaluation results in JSON format (e.g., ROUGE, F1 score).
+- **`metrics.json`**: Contains evaluation results in JSON format (ROUGE).
 
 
 
