@@ -1,0 +1,14 @@
+[INFO] Training started on 1000 examples for grammar_correction_problem
+[INFO] Training step 0, loss: 6.5678, accuracy: 0.015, global_step: 1
+[INFO] Training step 100, loss: 3.2567, accuracy: 0.20, global_step: 101
+[INFO] Training step 200, loss: 2.4321, accuracy: 0.38, global_step: 201
+[INFO] Training step 300, loss: 1.9784, accuracy: 0.50, global_step: 301
+[INFO] Training step 400, loss: 1.6700, accuracy: 0.60, global_step: 401
+[INFO] Training step 500, loss: 1.4325, accuracy: 0.65, global_step: 501
+[INFO] Training step 600, loss: 1.2109, accuracy: 0.70, global_step: 601
+[INFO] Training step 700, loss: 1.0567, accuracy: 0.73, global_step: 701
+[INFO] Training step 800, loss: 0.8925, accuracy: 0.76, global_step: 801
+[INFO] Training step 900, loss: 0.7678, accuracy: 0.78, global_step: 901
+[INFO] Training step 1000, loss: 0.6452, accuracy: 0.80, global_step: 1001
+[INFO] Saving model checkpoints at step 1000
+[INFO] Final training complete. Model saved to t2t_train/checkpoints/
