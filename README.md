@@ -2,6 +2,20 @@
 
 This repository provides a collection of datasets and scripts for training Assamese Grammar Error Correction models. It contains raw data, preprocessed datasets, and scripts for various stages of dataset creation, preparation, and training.
 
+## Methodology
+
+The goal of this project is to train a grammar error correction (GEC) model for Assamese using Tensor2Tensor. The methodology follows these steps:
+
+1. **Dataset Creation**: We start with a set of correct Assamese sentences. Errors are inserted using a rule-based approach to simulate grammatical mistakes. These incorrect sentences are then paired with their corresponding correct sentences to form a dataset suitable for supervised learning.
+
+2. **POS Tagging**: Part-of-speech tagging is performed on the sentences to provide linguistic information that helps in identifying where and how errors should be inserted. This makes the process of error insertion more targeted and linguistically informed.
+
+3. **Data Preparation**: The dataset is split into `source.txt` and `target.txt` files, where the `source.txt` contains incorrect sentences (inputs) and the `target.txt` contains the corresponding correct sentences (targets). These files are essential for training and evaluation.
+
+4. **Training**: A Tensor2Tensor-based model is used for training the GEC model. We define a custom problem (`grammar_problem.py`) to process and prepare the dataset. The training data is converted into TensorFlow records (TFRecords) and used for model training.
+
+5. **Evaluation**: The trained model is evaluated on a test dataset using metrics such as ROUGE and F1 score to assess its performance in grammar correction.
+
 ## Directory Structure
 
 The repository is organized into the following folders and files:
@@ -15,8 +29,6 @@ Contains scripts and raw data for the initial dataset creation process.
 - **`tagged_sentences.csv`**: Contains sentences with POS (Part-of-Speech) tags for each word.
 - **`preprocessed_dataset.csv`**: A dataset with an additional column for corresponding incorrect sentences.
 - **`final_dataset.csv`**: Contains only the sentence index, correct sentence, and incorrect sentence.
-
-
 
 ### 2. `dataset_preparation/`
 Contains scripts and files for preparing the source and target files needed for model training.
@@ -70,6 +82,4 @@ Contains final predictions and evaluation results.
 
 - **`predictions.txt`**: Contains model predictions on the test dataset.
 - **`metrics.json`**: Contains evaluation results in JSON format (ROUGE).
-
-
 
