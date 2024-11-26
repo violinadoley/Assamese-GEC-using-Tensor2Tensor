@@ -72,10 +72,14 @@ Contains files used during model training.
 - **`checkpoints/`**: Stores checkpoints saved during training.
 - **`train_log.txt`**: Contains logs generated during training (loss, accuracy, etc.).
 
+![My Image](Model Training.jpeg)
+
 ### 8. `evaluation/`
 Contains files for evaluating the model.
 
 - **`evaluate.py`**: Script to calculate evaluation metrics (ROUGE).
+
+![My Image](Model Evaluation.jpeg)
 
 ### 9. `outputs/`
 Contains final predictions and evaluation results.
