@@ -75,7 +75,7 @@ Contains files used during model training.
 ### 8. `evaluation/`
 Contains files for evaluating the model.
 
-- **`evaluate.py`**: Script to calculate evaluation metrics like ROUGE, F1 score, etc.
+- **`evaluate.py`**: Script to calculate evaluation metrics (ROUGE).
 
 ### 9. `outputs/`
 Contains final predictions and evaluation results.
