@@ -14,7 +14,7 @@ The goal of this project is to train a grammar error correction (GEC) model for 
 
 4. **Training**: A Tensor2Tensor-based model is used for training the GEC model. We define a custom problem (`grammar_problem.py`) to process and prepare the dataset. The training data is converted into TensorFlow records (TFRecords) and used for model training.
 
-5. **Evaluation**: The trained model is evaluated on a test dataset using metrics such as ROUGE and F1 score to assess its performance in grammar correction.
+5. **Evaluation**: The trained model is evaluated on a test dataset using ROUGE metric to assess its performance in grammar correction.
 
 ## Directory Structure
 
